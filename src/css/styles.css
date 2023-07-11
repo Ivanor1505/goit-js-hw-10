@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+}
+
 .breed-select {
     display: none;
     font-size: 22px;
@@ -10,11 +14,13 @@
 .loader {
     display: block;
 
+    margin-left: 20px;
+
     transform: rotateZ(45deg);
     perspective: 1000px;
     border-radius: 50%;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     color: #100f0f;
 }
 
@@ -106,7 +112,7 @@
 }
 
 .cat-info img {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-right: 20px;
     max-width: 600px;
 }

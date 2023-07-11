@@ -10,7 +10,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const breedSelect = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader');
-const error = document.querySelector('.error');
+// const error = document.querySelector('.error');
 const catInfo = document.querySelector('.cat-info');
 
  
@@ -49,8 +49,7 @@ function onChange() {
         const { name, description, temperament } = cat.breeds[0];
     
         catInfo.innerHTML = `
-  
-  <img class="cat-image" src="${cat.url}" alt="Cat Image">
+    <img class="cat-image" src="${cat.url}" alt="Cat Image">
   <div><h2 class="cat-name">${name}</h2>
   <p class="cat-description">${description}</p>
   <p class="cat-temperament">${temperament}</p>
