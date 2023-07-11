@@ -27,7 +27,7 @@ fetchBreeds()
       placeholder: 'Оберіть породу'
     });
 
-    
+    breedSelect.style.display = 'block';
     loader.style.display = 'none';
   })
   .catch(() => {
