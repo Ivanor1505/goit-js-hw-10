@@ -1,3 +1,6 @@
+// 1. Отримати масив порід
+// 2. Отримати породу з фото і описом
+
 import axios from "axios";
 
 axios.defaults.headers.common["x-api-key"] = "live_90gRrriou8scEThB9jSNLNR8EPZTVg784AOwksCcwT2K28QwfCQxgj5GP08NaRH4";
@@ -9,9 +12,8 @@ function fetchBreeds() {
     .catch(error => {
       throw new Error("Failed to fetch breeds");
     });
-    
-}
-// console.log(fetchBreeds())
+    }
+console.log(fetchBreeds())
 
 function fetchCatByBreed(breedId) {
   const url = `https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}`;

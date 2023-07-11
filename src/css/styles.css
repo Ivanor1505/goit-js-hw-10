@@ -1,5 +1,15 @@
+.breed-select {
+    display: block;
+    font-size: 22px;
+}
+
+.label {
+    font-size: 30px;
+}
+
 .loader {
     display: none;
+
     width: 64px;
     height: 64px;
     position: relative;
@@ -57,4 +67,20 @@
 
 .error {
     display: none;
+}
+
+.cat-info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.cat-info img {
+    margin-top: 20px;
+    margin-right: 20px;
+    max-width: 700px;
+}
+
+.cat-description {
+    max-width: 700px;
 }
